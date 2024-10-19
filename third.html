@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Selection and Teacher Assignment System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Course Selection and Teacher Assignment System</h1>
+    </header>
+    <section id="course-selection">
+        <h2>Select Courses and Teachers</h2>
+        <p>Select 4 theory courses and 2 lab courses, and assign teachers.</p>
+        <form id="courseForm">
+            <div class="course-section">
+                <h3>Theory Courses</h3>
+                <div class="course">
+                    <label for="theory1">Course 1:</label>
+                    <select id="theory1" required>
+                        <option value="" disabled selected>Select Course</option>
+                        <option value="course1">Introduction to Algorithms</option>
+
+                        <option value="course2">Operating Systems</option>
+                        <option value="course3">Database Systems</option>
+                        <option value="course4">computer networks</option>
+                        <option value="course5"> Web full stack</option>
+                    </select>
+
+                    <label for="teacher1">Teacher:</label>
+                    <select id="teacher1" required>
+                        <option value="" disabled selected>Select Teacher</option>
+                        <option value="teacher1">c. Smith</option>
+                        <option value="teacher2">k.sucharitha</option>
+                        <option value="teacher3">D.karishma</option>
+                        <option value="teacher4">v.k. Sunil Gaddam</option>
+                        <option value="teacher5">p.naveen sundar</option>
+                        
+                    </select>
+                    <button type="button" onclick="viewProfile('teacher1')">View Profile</button>
+                </div>
+            </div>
+            <div class="course-section">
+                <div class="course">
+                    <label for="theory2">Course 2:</label>
+                    <select id="theory2" required>
+                        <option value="" disabled selected>Select Course</option>
+                        <option value="course1">Introduction to Algorithms</option>
+                        
+                        <option value="course2">Operating Systems</option>
+                        <option value="course3">Database Systems</option>
+                        <option value="course4">computer networks</option>
+                        <option value="course5"> Web full stack</option>
+                    </select>
+
+                    <label for="teacher2">Teacher:</label>
+                    <select id="teacher2" required>
+                        <option value="" disabled selected>Select Teacher</option>
+                        <option value="teacher1">c. Smith</option>
+                        <option value="teacher2">k.sucharitha</option>
+                        <option value="teacher3">D.karishma</option>
+                        <option value="teacher4">v.k. Sunil Gaddam</option>
+                        <option value="teacher5">p.naveen sundar</option>
+                    </select>
+                    <button type="button" onclick="viewProfile('teacher1')">View Profile</button>
+                </div>
+            </div>
+            <div class="course-section">
+                <div class="course">
+                    <label for="theory3">Course 3:</label>
+                    <select id="theory3" required>
+                        <option value="" disabled selected>Select Course</option>
+                        <option value="course1">Introduction to Algorithms</option>
+                        
+                        <option value="course2">Operating Systems</option>
+                        <option value="course3">Database Systems</option>
+                        <option value="course4">computer networks</option>
+                        <option value="course5"> Web full stack</option>
+                    </select>
+
+                    <label for="teacher3">Teacher:</label>
+                    <select id="teacher3" required>
+                        <option value="" disabled selected>Select Teacher</option>
+                        <option value="teacher1">c. Smith</option>
+                        <option value="teacher2">k.sucharitha</option>
+                        <option value="teacher3">D.karishma</option>
+                        <option value="teacher4">v.k. Sunil Gaddam</option>
+                        <option value="teacher5">p.naveen sundar</option>
+                    </select>
+                    <button type="button" onclick="viewProfile('teacher1')">View Profile</button>
+                </div>
+            </div>
+            <div class="course-section">
+                <div class="course">
+                    <label for="theory4">Course 4:</label>
+                    <select id="theory4" required>
+                        <option value="" disabled selected>Select Course</option>
+                        <option value="course1">Introduction to Algorithms</option>
+                        
+                        <option value="course2">Operating Systems</option>
+                        <option value="course3">Database Systems</option>
+                        <option value="course4">computer networks</option>
+                        <option value="course5"> Web full stack</option>
+                    </select>
+
+                    <label for="teacher4">Teacher:</label>
+                    <select id="teacher4" required>
+                        <option value="" disabled selected>Select Teacher</option>
+                        <option value="teacher1">c. Smith</option>
+                        <option value="teacher2">k.sucharitha</option>
+                        <option value="teacher3">D.karishma</option>
+                        <option value="teacher4">v.k. Sunil Gaddam</option>
+                        <option value="teacher5">p.naveen sundar</option>
+                    </select>
+                    <button type="button" onclick="viewProfile('teacher1')">View Profile</button>
+                </div>
+            </div>
+
+
+
+            <div class="course-section">
+                <h3>Lab Courses</h3>
+                <div class="course">
+                    <label for="lab1">Lab Course 1:</label>
+                    <select id="lab1" required>
+                        <option value="" disabled selected>Select Course</option>
+                        <option value="lab1">Database Lab</option>
+                        <option value="lab2">Operating Systems Lab</option>
+                        <option value="lab3">computer networks lab</option>
+                    </select>
+                    <label for="labTeacher1">Teacher:</label>
+                    <select id="labTeacher1" required>
+                        <option value="" disabled selected>Select Teacher</option>
+                        <option value="teacher1">D.karishma</option>
+                        <option value="teacher2">k.sucharitha</option>
+                        <option value="teacher3">v.k. Sunil Gaddam</option>
+                    </select>
+                    <button type="button" onclick="viewProfile('teacher1')">View Profile</button>
+                </div>
+            </div>
+            <div class="course-section">
+                <div class="course">
+                    <label for="lab2">Lab Course 2:</label>
+                    <select id="lab2" required>
+                        <option value="" disabled selected>Select Course</option>
+                        <option value="lab1">Database Lab</option>
+                        <option value="lab2">Operating Systems Lab</option>
+                        <option value="lab3">computer networks lab</option>
+                    </select>
+                    <label for="labTeacher2">Teacher:</label>
+                    <select id="labTeacher2" required>
+                        <option value="" disabled selected>Select Teacher</option>
+                        <option value="teacher1">D.karishma</option>
+                        <option value="teacher2">k.sucharitha</option>
+                        <option value="teacher3">v.k. Sunil Gaddam</option>
+                    </select>
+                    <button type="button" onclick="viewProfile('teacher1')">View Profile</button>
+                </div>
+            </div>
+
+            <input type="submit" value="Submit Selection">
+        </form>
+    </section>
+    <section id="teacher-profiles" class="hidden">
+        <h2>Teacher Profile</h2>
+        <div id="profile-content"></div>
+        <button onclick="closeProfile()">Close Profile</button>
+    </section>
+    <section id="feedback-section">
+        <h2>Submit Feedback</h2>
+        <form id="feedbackForm">
+            <label for="feedbackTeacher">Select Teacher:</label>
+            <select id="feedbackTeacher" required>
+                <option value="" disabled selected>Select Teacher</option>
+                <option value="teacher1">c. Smith</option>
+                <option value="teacher2">k.sucharitha</option>
+                <option value="teacher3">D.karishma</option>
+                <option value="teacher4">v.k. Sunil Gaddam</option>
+                <option value="teacher5">p.naveen sundar</option>
+            </select>
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" rows="4" required></textarea>
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" min="1" max="5" required>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+    <script >
+        // Simulated teacher profiles
+var teachers = {
+    teacher1: {
+        name: "c. Smith",
+        rating: 4.5,
+        researchProjects: "AI and Machine Learning",
+        patents: "2 Patents in Data Science",
+        academicBackground: "PhD in Computer Science from MIT"
+    },
+    teacher2: {
+        name: "k.sucharitha",
+        rating: 4.2,
+        researchProjects: "Cybersecurity and Cryptography",
+        patents: "1 Patent in Network Security",
+        academicBackground: "PhD in Cybersecurity from Stanford"
+    },
+    teacher3: {
+        name: "D.karishma",
+        rating: 4.8,
+        researchProjects: "Quantum Computing",
+        patents: "3 Patents in Quantum Technology",
+        academicBackground: "PhD in Quantum Computing from Harvard"
+    },
+    teacher4: {
+        name: "v.k.sunil Gaddam",
+        rating: 3.0,
+        researchProjects: "coumputer networking",
+        patents: "3 Patents in coumputer networking",
+        academicBackground: "PhD in coumputer networking from paurl"
+    },
+    teacher5: {
+        name: "p.naveen sundar",
+        rating: 4.9,
+        researchProjects: "full satck",
+        patents: "3 Patents in web development",
+        academicBackground: "PhD in web development from Stanford"
+    },
+};
+
+// View teacher profile
+function viewProfile(teacherId) {
+    var profile = teachers[teacherId];
+    if (profile) {
+        document.getElementById('profile-content').innerHTML = `
+            <p><strong>Name:</strong> ${profile.name}</p>
+            <p><strong>Rating:</strong> ${profile.rating}</p>
+            <p><strong>Research Projects:</strong> ${profile.researchProjects}</p>
+            <p><strong>Patents:</strong> ${profile.patents}</p>
+            <p><strong>Academic Background:</strong> ${profile.academicBackground}</p>
+        `;
+        document.getElementById('teacher-profiles').classList.remove('hidden');
+    }
+}
+function viewProfile(teacherId) {
+    var profile = teachers[teacherId];
+    if (profile) {
+        document.getElementById('profile-content').innerHTML = `
+            <p><strong>Name:</strong> ${profile.name}</p>
+            <p><strong>Rating:</strong> ${profile.rating}</p>
+            <p><strong>Research Projects:</strong> ${profile.researchProjects}</p>
+            <p><strong>Patents:</strong> ${profile.patents}</p>
+            <p><strong>Academic Background:</strong> ${profile.academicBackground}</p>
+        `;
+        document.getElementById('teacher-profiles').classList.remove('hidden');
+    }
+}
+
+function viewProfile(teacherId) {
+    var profile = teachers[teacherId];
+    if (profile) {
+        document.getElementById('profile-content').innerHTML = `
+            <p><strong>Name:</strong> ${profile.name}</p>
+            <p><strong>Rating:</strong> ${profile.rating}</p>
+            <p><strong>Research Projects:</strong> ${profile.researchProjects}</p>
+            <p><strong>Patents:</strong> ${profile.patents}</p>
+            <p><strong>Academic Background:</strong> ${profile.academicBackground}</p>
+        `;
+        document.getElementById('teacher-profiles').classList.remove('hidden');
+    }
+}
+
+function viewProfile(teacherId) {
+    var profile = teachers[teacherId];
+    if (profile) {
+        document.getElementById('profile-content').innerHTML = `
+            <p><strong>Name:</strong> ${profile.name}</p>
+            <p><strong>Rating:</strong> ${profile.rating}</p>
+            <p><strong>Research Projects:</strong> ${profile.researchProjects}</p>
+            <p><strong>Patents:</strong> ${profile.patents}</p>
+            <p><strong>Academic Background:</strong> ${profile.academicBackground}</p>
+        `;
+        document.getElementById('teacher-profiles').classList.remove('hidden');
+    }
+}
+function viewProfile(teacherId) {
+    var profile = teachers[teacherId];
+    if (profile) {
+        document.getElementById('profile-content').innerHTML = `
+            <p><strong>Name:</strong> ${profile.name}</p>
+            <p><strong>Rating:</strong> ${profile.rating}</p>
+            <p><strong>Research Projects:</strong> ${profile.researchProjects}</p>
+            <p><strong>Patents:</strong> ${profile.patents}</p>
+            <p><strong>Academic Background:</strong> ${profile.academicBackground}</p>
+        `;
+        document.getElementById('teacher-profiles').classList.remove('hidden');
+    }
+}
+
+
+// Close teacher profile view
+function closeProfile() {
+    document.getElementById('teacher-profiles').classList.add('hidden');
+   
+}
+
+
+// Handle form submissions
+document.getElementById('courseForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert("Course selection submitted successfully!");
+});
+
+document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert("Feedback submitted successfully!");
+});
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #80b105;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(229, 9, 9, 0.1);
+}
+
+h2 {
+    margin-bottom: 15px;
+}
+
+.course-section {
+    margin-bottom: 20px;
+}
+
+.course {
+    margin-bottom: 15px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select, input[type="submit"], textarea {
+    margin: 10px 0;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #000000f7;
+    color: rgb(165, 243, 9);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f14df;
+}
